@@ -20,6 +20,7 @@ Adopt modern, high-performance tooling by default. Refrain from using legacy equ
 - **Framework**: Use `tanstack start` instead of `next.js` or `react-router`.
 - **Testing**: Use `vitest` instead of `jest`.
 - **Backend**: Use `convex` instead of `supabase` or `firebase`.
+- **Linting/Formatting**: Use `biome` instead of `eslint` and `prettier`.
 
 ### Python Ecosystem
 - **Package Management**: Use `uv` instead of `pip` or `poetry`.
