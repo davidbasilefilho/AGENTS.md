@@ -16,5 +16,8 @@ Produce code that is minimal, readable, and performant.
 - **No Comments**: Do not use comments in code unless ABSOLUTELY necessary for readability. Code must be self-documenting through clear variable naming and structure.
 - **No Magic Numbers**: Define constants for all numeric or string literals. Do not hardcode raw values in logic.
 
+### API Design Patterns
+- **Dual Getter-Setter Functions**: Use combined getter-setter functions instead of separate methods. A call with no arguments returns the current value; a call with an argument sets the value (e.g., `property()` to get, `property(value)` to set).
+
 ### User Experience
 - **Focus**: Ensure the code provides a superior interface, focusing on high-quality UI/UX for end-users and DX (Developer Experience) for maintainers.
