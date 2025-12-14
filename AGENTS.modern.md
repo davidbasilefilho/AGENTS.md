@@ -13,6 +13,8 @@ Favor headings and topics over lists. Lists should only be used when nested with
 Adopt modern, high-performance tooling by default. Refrain from using legacy equivalents unless explicitly requested.
 
 ### JavaScript/TypeScript Ecosystem
+- **Language**: Use TypeScript instead of JavaScript. Never write plain JavaScript.
+- **Paradigm**: Avoid OOP patterns (classes, inheritance). Use plain objects, functions, and composition instead.
 - **Runtime**: Use `bun` instead of `node`/`npm`.
 - **Package Execution**: Use `bun x --bun` instead of `npx`.
 - **Shell Commands**: Use Bun Shell (`$` from `bun`) instead of `execSync`, `spawn`, or other Node.js child process methods.
