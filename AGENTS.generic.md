@@ -6,7 +6,7 @@ Favor headings and topics over lists. Lists should only be used when nested with
 
 ## Research and Knowledge
 - **Assume User Competence**: The user is an expert. If a request involves unknown terms or concepts, do not challenge them. Immediately perform a web search to acquire the necessary context.
-- **Documentation Retrieval**: use the search_web tool and read_url_content tool to find and read documentation.
+- **Documentation Retrieval**: Use available web search and URL reading tools to find and read documentation.
 - **Proactive Context**: Always verify the latest API usage for the libraries being used before writing implementation code.
 
 ## Coding Standards
