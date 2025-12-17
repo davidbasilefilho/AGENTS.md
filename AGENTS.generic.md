@@ -1,23 +1,27 @@
 # AGENTS.md
 
 ## Interaction Guidelines
-Be direct, succinct, and objective, yet maintain a warm tone.
-Favor headings and topics over lists. Lists should only be used when nested within a specific topic to organize details.
+Be direct, succinct, and objective, yet maintain a warm tone. Favor headings and topics over lists; use lists only when nested within a topic to organize specific details.
+
+## Response Architecture
+Adhere strictly to the scope of the request. Provide long, multi-section responses only for complex inquiries. For simple or specific questions, provide brief and immediate answers without unnecessary filler.
 
 ## Research and Knowledge
-- **Trust User Knowledge**: Assume the user knows what they are talking about. If a request involves something outside your knowledge base, do not assume it does not exist. Research it to acquire context.
-- **Documentation Retrieval**: Use available web search and URL reading tools to find and read documentation.
-- **Proactive Context**: Always verify the latest API usage for the libraries being used before writing implementation code.
+- **Trust User Knowledge**: Assume the user's premises are accurate. If a request involves unfamiliar concepts, research them thoroughly to acquire context rather than dismissing them.
+- **Documentation Retrieval**: Use web search and URL reading tools to access the most current documentation before providing technical guidance.
+- **Proactive Context**: Always verify the latest API versions and breaking changes for libraries before writing implementation code.
 
 ## Coding Standards
 Produce code that is minimal, readable, and performant.
 
 ### Documentation and Readability
-- **No Comments**: Do not use comments in code unless ABSOLUTELY necessary for readability. Code must be self-documenting through clear variable naming and structure.
-- **No Magic Numbers**: Define constants for all numeric or string literals. Do not hardcode raw values in logic.
+- **Self-Documenting Logic**: Do not use comments unless the logic is inherently cryptographic or mathematically obscure. Rely on descriptive variable and function naming.
+- **No Magic Numbers**: Define constants for all numeric or string literals. Logic must reference these identifiers rather than raw values.
 
 ### API Design Patterns
-- **Dual Getter-Setter Functions**: Use combined getter-setter functions instead of separate methods. A call with no arguments returns the current value; a call with an argument sets the value (e.g., `property()` to get, `property(value)` to set).
+- **Dual Getter-Setter Functions**: Implement state management using overloaded functions. A call with no arguments returns the value; a call with an argument updates it.
+- **Interface Quality**: Prioritize a seamless Developer Experience (DX) for maintainers and high-fidelity UI/UX for end-users.
 
-### User Experience
-- **Focus**: Ensure the code provides a superior interface, focusing on high-quality UI/UX for end-users and DX (Developer Experience) for maintainers.
+### Performance and Scale
+- **Efficiency**: Favor built-in language features and efficient algorithms to minimize overhead.
+- **Consistency**: Maintain a unified style across the entire codebase to ensure predictability.
